@@ -40,7 +40,10 @@ alias sshgv='eval $(ssh-agent) && ssh-add ~/.ssh/vanta_gh_id_ed25519'
 alias ssha='eval $(ssh-agent) && ssh-add ~/.ssh/aws_id_ed25519'
 
 # work
-alias ghcsv="gh codespace ssh -c joserosas-vanta-refactored-xylophone-xj6qxgx9q99c99px"
+alias motypes="make generate-types"                                                                                                                                                                                                                                                                                                                                      │
+alias modev="make dev-start api-service auth-service resource-fetcher resource-fetcher-xl resource-fetcher-live test-runner web web-client"                                                                                                                                                                                                                              │
+alias mologs="make dev-watch-logs resource-fetcher"                                                                                                                                                                                                                                                                                                                      │
+alias moclean="make clean npm-ci generate types"                                                                                                                                                                                                                                                                                                                         │
 
 ## Python aliases
 alias py="python3"
@@ -57,8 +60,12 @@ alias gci="git commit"
 alias gP="git push"
 alias gf="git fetch"
 alias gp="git pull"
+alias gpr="git pull --rebase"
+alias gco="git checkout"
 
-# Copilot CLI 
+# GH & Copilot CLI 
+alias ghcs="gh codespace"
+alias ghcsn="gh codespace create --repo VantaInc/obsidian --location EastUs --branch main --machine largePremiumLinux"
 eval "$(github-copilot-cli alias -- "$0")"
 
 # Remove folder highlight in Windows
